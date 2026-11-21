@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hooku · CRM con IA para clínicas estéticas</title>
+<meta name="description" content="Hooku es un CRM con inteligencia artificial para clínicas estéticas: convierte cada conversación de WhatsApp en una evaluación pagada y un paciente que asiste.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Hooku · CRM con IA para clínicas estéticas">
+<meta property="og:description" content="Del anuncio al sillón: agenda, cobra la evaluación y logra que el paciente asista.">
+<meta property="og:image" content="https://hooku.pro/hooku-icono-app.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --naranja: #F97316; --naranja-osc: #C2410C; --tinta: #1C1917; --crema: #FFF7ED;
+    --gris: #57534E; --linea: #E7E5E4; --fondo: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Poppins, system-ui, sans-serif; color: var(--tinta); background: var(--fondo); line-height: 1.6; }
+  a { color: var(--naranja-osc); }
+  .envoltura { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header { border-bottom: 1px solid var(--linea); }
+  header .envoltura { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  header img { height: 34px; }
+  .boton { display: inline-block; background: var(--naranja); color: #fff; text-decoration: none; font-weight: 600; padding: 12px 22px; border-radius: 10px; }
+  .boton:hover { background: var(--naranja-osc); }
+  .boton.chico { padding: 8px 16px; font-size: 14px; }
+  .portada { background: var(--crema); padding: 72px 0 80px; }
+  .portada h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.12; margin: 0 0 18px; font-weight: 600; max-width: 760px; }
+  .portada h1 span { color: var(--naranja); }
+  .portada p { font-size: 19px; color: var(--gris); max-width: 640px; margin: 0 0 28px; }
+  .etiqueta { display: inline-block; font-size: 13px; font-weight: 500; color: var(--naranja-osc); background: #FFEDD5; padding: 4px 12px; border-radius: 99px; margin-bottom: 18px; }
+  section { padding: 72px 0; }
+  h2 { font-size: clamp(26px, 3.4vw, 34px); margin: 0 0 12px; font-weight: 600; }
+  .bajada { color: var(--gris); max-width: 680px; margin: 0 0 36px; }
+  .rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+  .tarjeta { border: 1px solid var(--linea); border-radius: 14px; padding: 24px; background: #fff; }
+  .tarjeta h3 { margin: 0 0 8px; font-size: 18px; font-weight: 600; }
+  .tarjeta p { margin: 0; color: var(--gris); font-size: 15px; }
+  .numero { display: inline-flex; width: 34px; height: 34px; border-radius: 50%; background: var(--naranja); color: #fff; font-weight: 600; align-items: center; justify-content: center; margin-bottom: 12px; }
+  .gris { background: #FAFAF9; border-top: 1px solid var(--linea); border-bottom: 1px solid var(--linea); }
+  .lista { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .lista li { padding-left: 28px; position: relative; }
+  .lista li::before { content: ""; position: absolute; left: 0; top: 9px; width: 12px; height: 12px; border-radius: 50%; background: var(--naranja); }
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  .contacto { background: var(--tinta); color: var(--crema); text-align: center; }
+  .contacto h2 { color: #fff; }
+  .contacto p { color: #D6D3D1; margin: 0 auto 26px; max-width: 560px; }
+  footer { padding: 28px 0; font-size: 14px; color: var(--gris); }
+  footer .envoltura { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  @media (max-width: 760px) { .dos { grid-template-columns: 1fr; } section { padding: 56px 0; } .portada { padding: 52px 0 60px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="envoltura">
+    <img src="hooku-logo-claro-transparente.svg" alt="Hooku">
+    <a class="boton chico" href="mailto:info@hooku.pro">Contacto</a>
+  </div>
+</header>
+
+<div class="portada">
+  <div class="envoltura">
+    <span class="etiqueta">CRM agéntico con IA · Hecho en Chile</span>
+    <h1>Del anuncio al sillón: <span>ningún sillón vacío</span> en tu clínica.</h1>
+    <p>Hooku es un CRM con inteligencia artificial para clínicas estéticas y de bienestar. Atiende cada conversación de WhatsApp y Messenger, agenda, cobra la evaluación por link y acompaña al paciente hasta que asiste.</p>
+    <a class="boton" href="mailto:info@hooku.pro?subject=Quiero%20conocer%20Hooku">Agenda una demo</a>
+  </div>
+</div>
+
+<section>
+  <div class="envoltura">
+    <h2>El problema</h2>
+    <p class="bajada">Las clínicas estéticas invierten en anuncios, pero la mayoría de las personas que escriben nunca llegan al sillón: nadie responde a tiempo, la conversación se enfría o el paciente agenda y no asiste. El sillón vacío es plata que no vuelve.</p>
+    <div class="rejilla">
+      <div class="tarjeta"><span class="numero">1</span><h3>Respuesta en segundos</h3><p>Un agente de IA conversa como el equipo de la clínica, a cualquier hora, con el guion de cada tratamiento.</p></div>
+      <div class="tarjeta"><span class="numero">2</span><h3>Evaluación pagada</h3><p>Lleva la conversación a una evaluación con la profesional y la cobra por link de pago, lo que asegura el compromiso.</p></div>
+      <div class="tarjeta"><span class="numero">3</span><h3>Asistencia, no solo agenda</h3><p>Ofrece horas cercanas, confirma y hace seguimiento para que el paciente llegue. Medimos asistencias, no mensajes.</p></div>
+      <div class="tarjeta"><span class="numero">4</span><h3>Aprende por clínica</h3><p>Registra qué mensajes traen gente al sillón y qué anuncio la originó, para mejorar el guion y la inversión cada semana.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="envoltura dos">
+    <div>
+      <h2>Qué incluye Hooku</h2>
+      <p class="bajada">Una sola plataforma para el equipo comercial de la clínica.</p>
+    </div>
+    <ul class="lista">
+      <li>Agente de IA en WhatsApp Business (API oficial de Meta) y Messenger.</li>
+      <li>CRM con etapas, etiquetas y temperatura de cada lead.</li>
+      <li>Cobro de evaluaciones con link de pago.</li>
+      <li>Origen de cada paciente: qué anuncio de Meta trajo a quién, con píxel y API de conversiones.</li>
+      <li>Páginas de captación, clases en vivo y reservas.</li>
+      <li>Panel de ocupación de agenda y reportes semanales para la dueña de la clínica.</li>
+      <li>Supervisión de calidad: cada conversación se revisa para mejorar el guion.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="envoltura dos">
+    <div>
+      <h2>Tecnología</h2>
+      <p class="bajada">Hooku está construido con modelos de lenguaje de última generación y corre en Google Cloud. Cada clínica tiene su propia instalación, con su información separada, copias de respaldo y revisión de seguridad semanal.</p>
+    </div>
+    <div>
+      <h2>Para quién es</h2>
+      <p class="bajada">Clínicas de medicina estética, odontología estética y centros de bienestar que reciben pacientes por anuncios en redes sociales y quieren convertir más conversaciones en tratamientos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contacto">
+  <div class="envoltura">
+    <h2>Conversemos</h2>
+    <p>Estamos sumando clínicas en Chile. Escríbenos y te mostramos Hooku funcionando.</p>
+    <a class="boton" href="mailto:info@hooku.pro">info@hooku.pro</a>
+  </div>
+</section>
+
+<footer>
+  <div class="envoltura">
+    <span>© 2026 Hooku · Chile</span>
+    <span><a href="mailto:info@hooku.pro">info@hooku.pro</a></span>
+  </div>
+</footer>
+</body>
+</html>
